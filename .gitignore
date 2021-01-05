@@ -9,6 +9,7 @@
 
 #Visual studio files
 .vs
+/out
 
 # Compiled Static libraries
 *.lai
@@ -18,7 +19,9 @@
 /Testing
 
 # Cmake generated files
-build
+build/*
+!build/.gitkeep 
+install/*
 
 #eclipse files
 .cproject
@@ -26,3 +29,12 @@ build
 .project
 *.out
 /Default/
+
+projects/*
+!projects/.gitkeep
+
+**/CMakeCache.txt
+**/CMakeFiles
+/CMakeSettings.json
+/.venv/
+/Pipfile
